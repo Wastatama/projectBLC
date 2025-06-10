@@ -38,7 +38,7 @@
     <!-- Hero Section -->
     <div class="w-full h-64 bg-cover bg-center relative" style="background-image: url('{{ asset('images/pengunjung1.png') }}');">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h1 class="text-white text-3xl md:text-4xl font-bold text-center">Maklumat Dan Standar <br> Broadband Learning Center Surabaya</h1>
+            <h1 class="text-white text-3xl md:text-4xl font-bold text-center">Pendaftaran <br> Broadband Learning Center Surabaya</h1>
         </div>
     </div>
 
@@ -55,8 +55,8 @@
                 <h2 class="text-lg font-semibold mb-4 text-gray-800">Informasi</h2>
                 <ul class="space-y-2">
                     <li><a href="{{ route('informasi.tentang') }}" class="text-orange-500 hover:underline">Tentang</a></li>
-                    <li><a href="{{ route('informasi.pendaftaran') }}" class="text-orange-500 hover:underline">Pendaftaran</a></li>
-                    <li><a href="{{ route('informasi.maklumat') }}" class="text-orange-500 font-bold">Maklumat & standar </a></li>
+                    <li><a href="{{ route('informasi.pendaftaran') }}" class="text-orange-500 font-bold">Pendaftaran</a></li>
+                    <li><a href="{{ route('informasi.maklumat') }}" class="text-orange-500 hover:underline">Maklumat & standar </a></li>
                     <li><a href="{{ route('informasi.pembelajaran') }}" class="text-orange-500 hover:underline">Pembelajaran </a></li>
                     <li><a href="{{ route('informasi.faq') }}" class="text-orange-500 hover:underline">FAQ</a></li>
                 </ul>

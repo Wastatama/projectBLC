@@ -49,19 +49,19 @@
             <img src="{{ asset('images/maklumat-pelayanan.png') }}" alt="Maklumat Pelayanan" class="w-full rounded shadow">
         </div>
 
-        <!-- Sidebar -->
-        <aside class="md:w-1/4">
-            <div class="bg-white rounded shadow p-4 sticky top-24">
-                <h2 class="text-lg font-semibold mb-4 text-gray-800">Informasi</h2>
-                <ul class="space-y-2">
-                    <li><a href="{{ route('informasi.tentang') }}" class="text-orange-500 hover:underline">Tentang</a></li>
-                    <li><a href="{{ route('informasi.pendaftaran') }}" class="text-orange-500 hover:underline">Pendaftaran</a></li>
-                    <li><a href="{{ route('informasi.maklumat') }}" class="text-orange-500 font-bold">Maklumat & standar </a></li>
-                    <li><a href="{{ route('informasi.pembelajaran') }}" class="text-orange-500 hover:underline">Pembelajaran </a></li>
-                    <li><a href="{{ route('informasi.faq') }}" class="text-orange-500 hover:underline">FAQ</a></li>
-                </ul>
-            </div>
-        </aside>
+        <!-- Sidebar (sebelah kanan dan sticky) -->
+    <aside class="md:w-1/4 w-full">
+      <div class="bg-white rounded shadow p-4 sticky top-24 max-h-[calc(100vh-6rem)] overflow-auto">
+        <h2 class="text-lg font-semibold mb-4 text-gray-800">Informasi</h2>
+        <ul class="space-y-2">
+          <li><a href="{{ route('informasi.tentang') }}" class="text-orange-500 hover:underline">Tentang</a></li>
+          <li><a href="{{ route('informasi.pendaftaran') }}" class="text-orange-500 hover:underline">Pendaftaran</a></li>
+          <li><a href="{{ route('informasi.maklumat') }}" class="text-orange-500 font-bold">Maklumat & standar</a></li>
+          <li><a href="{{ route('informasi.pembelajaran') }}" class="text-orange-500 hover:underline">Pembelajaran</a></li>
+          <li><a href="{{ route('informasi.faq') }}" class="text-orange-500 hover:underline">FAQ</a></li>
+        </ul>
+      </div>
+    </aside>
     </div>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>

@@ -51,7 +51,7 @@
             <div class="space-y-4">
                 <!-- Materi 1 -->
                 <div class="bg-white rounded-lg shadow p-4 flex items-start gap-4">
-                    <img src="/images/icons/aplikasi.png" alt="Aplikasi Perkantoran" class="w-12 h-12">
+                    <img src="/images/msoffice.png" alt="Aplikasi Perkantoran" class="w-12 h-12">
                     <div>
                         <h3 class="text-lg font-semibold">Aplikasi Perkantoran</h3>
                         <p class="text-sm text-gray-700">Penulisan karya ilmiah, surat resmi, perhitungan keuangan, membuat presentasi.</p>
@@ -123,19 +123,19 @@
     
         </main>
     
-        <!-- Sidebar -->
-        <aside class="md:w-1/4">
-            <div class="bg-white rounded shadow p-4 sticky top-24">
-                <h2 class="text-lg font-semibold mb-4 text-gray-800">Informasi</h2>
-                <ul class="space-y-2">
-                    <li><a href="{{ route('informasi.tentang') }}" class="text-orange-500 hover:underline">Tentang</a></li>
-                    <li><a href="{{ route('informasi.pendaftaran') }}" class="text-orange-500 hover:underline">Pendaftaran</a></li>
-                    <li><a href="{{ route('informasi.maklumat') }}" class="text-orange-500 hover:underline">Maklumat & standar</a></li>
-                    <li><a href="{{ route('informasi.pembelajaran') }}" class="text-orange-500 font-bold">Pembelajaran</a></li>
-                    <li><a href="{{ route('informasi.faq') }}" class="text-orange-500 hover:underline">FAQ</a></li>
-                </ul>
-            </div>
-        </aside>
+        <!-- Sidebar (sebelah kanan dan sticky) -->
+    <aside class="md:w-1/4 w-full">
+      <div class="bg-white rounded shadow p-4 sticky top-24 max-h-[calc(100vh-6rem)] overflow-auto">
+        <h2 class="text-lg font-semibold mb-4 text-gray-800">Informasi</h2>
+        <ul class="space-y-2">
+          <li><a href="{{ route('informasi.tentang') }}" class="text-orange-500 hover:underline">Tentang</a></li>
+          <li><a href="{{ route('informasi.pendaftaran') }}" class="text-orange-500 hover:underline">Pendaftaran</a></li>
+          <li><a href="{{ route('informasi.maklumat') }}" class="text-orange-500 hover:underline">Maklumat & standar</a></li>
+          <li><a href="{{ route('informasi.pembelajaran') }}" class="text-orange-500 font-bold">Pembelajaran</a></li>
+          <li><a href="{{ route('informasi.faq') }}" class="text-orange-500 hover:underline">FAQ</a></li>
+        </ul>
+      </div>
+    </aside>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
